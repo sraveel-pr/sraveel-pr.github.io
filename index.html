@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{border-bottom:1px solid #12281a;padding-bottom:8px;text-transform:none;letter-spacing:.04em;font-size:14px}
 .card{background:#0d2015;border:1px solid #12281a;border-radius:2px;padding:20px}
 
-background-image:repeating-linear-gradient(0deg, transparent 0 39px, #12281a 39px 40px);
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:repeating-linear-gradient(0deg, transparent 0 39px, #12281a 39px 40px)}
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #12281a 39p
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>围绕偏见子群测试，我做了不少工具和笔记。</p>
+  <p>围绕偏见子群测试，我做了不少工具和笔记。 当前以博士后 / 研究工程师阶段研究角色的方式推进项目。</p>
   <ul class="traits">
     <li>没搞懂的地方就直说没搞懂。</li>
     <li>失败的过程也记下来。</li>
@@ -89,12 +89,20 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #12281a 39p
   <div class="grid two">
     <article class="card">
       <h3>偏见子群测试的度量方式与可解释性</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>偏见子群测试的判定依据与复核方式</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>偏见子群测试里容易误判的情形与反例</h3>
+      <span class="status">持续跟进</span>
+    </article>
+    <article class="card">
+      <h3>在推进的问题</h3>
+      <p>（偏见子群测试场景）偏见子群测试这个指标本身可解释吗？用口径一致性比对拆解它由哪些可观测成分构成。</p>
+      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -104,6 +112,9 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #12281a 39p
   <ul class="repos">
     <li><div class="name"><a href="https://github.com/sraveel-pr/biaslens" rel="noopener">biaslens</a></div>
       <div class="desc">对不同子群样本计算指标差异，给出差异幅度与显著性</div>
+    </li>
+    <li><div class="name"><a href="https://github.com/sraveel-pr/consistency_ablation_matrix_15d1039a" rel="noopener">consistency_ablation_matrix_15d1039a</a></div>
+      <div class="desc">（偏见子群测试场景）偏见子群测试这个指标本身可解释吗？用口径一致性比对拆解它由哪些可观测成分构成。</div>
     </li>
   </ul>
 </section>
